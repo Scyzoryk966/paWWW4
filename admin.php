@@ -1,14 +1,19 @@
 <?php
 session_start();
+
+if (isset($_SESSION['logged_id'])) {
+	header('Location: list.php');
+	exit();
+}
 ?>
 <!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="utf-8">
-    <title>Newsletter - zapisz się!</title>
-    <meta name="description" content="Używanie PDO - zapis do bazy MySQL">
+    <title>Panel administracyjny</title>
+    <meta name="description" content="Używanie PDO - odczyt z bazy MySQL">
     <meta name="keywords" content="php, kurs, PDO, połączenie, MySQL">
-    <meta http-equiv="X-Ua-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
@@ -21,21 +26,20 @@ session_start();
     <div class="container">
 
         <header>
-            <h1>Newsletter</h1>
+            <h1>Admin</h1>
         </header>
 
         <main>
             <article>
-                <form method="post" action="save.php">
-                    <label>Podaj adres e-mail
-                        <input type="email" name="email" <?= isset($_SESSION['given_email']) ? 'value="' . $_SESSION['given_email'] . '"' : '' ?>>
-                    </label>
-                    <input type="submit" value="Zapisz się!">
+                <form method="post" action="list.php">
+                    <label>Login <input type="text" name="login"></label>
+                    <label>Hasło <input type="password" name="pass"></label>
+                    <input type="submit" value="Zaloguj się!">
 					
 					<?php
-					if (isset($_SESSION['given_email'])) {
-						echo '<p>To nie jest poprawny adres!</p>';
-						unset($_SESSION['given_email']);
+					if (isset($_SESSION['bad_attempt'])) {
+						echo '<p>Niepoprawny login lub hasło!</p>';
+						unset($_SESSION['bad_attempt']);
 					}
 					?>
 					
