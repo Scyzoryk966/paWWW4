@@ -1,6 +1,9 @@
 <?php
 
-session_start();
-unset($_SESSION['logged_id']);
+	session_start();
+	
+	session_unset();
+	
+	header('Location: index.php');
 
-header('Location: admin.php');
+?>
