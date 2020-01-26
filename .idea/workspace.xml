@@ -2,31 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9e751cd-6c8b-44df-87ea-6c2f12a49f6c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vagrant.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/del.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/email.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/every.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/header.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/list.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pdfgen.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/hexellence.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/list.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/logout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/save.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serwis.php" beforeDir="false" afterPath="$PROJECT_DIR$/serwis.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,14 +76,15 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\resztapaWWW\paWWW4\plugin" />
+      <recent name="D:\resztapaWWW\paWWW4\img" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\resztapaWWW\paWWW4" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\resztapaWWW\paWWW4\img" />
-    </key>
   </component>
-  <component name="RunManager" selected="PHP Script.serwis.php">
+  <component name="RunManager" selected="JavaScript Debug.serwis.php">
     <configuration name="index.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://orfi.uwm.edu.pl/~s145985/paWWW4/index.php">
       <method v="2" />
     </configuration>
@@ -113,11 +94,15 @@
     <configuration name="rejestracja.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://orfi.uwm.edu.pl/~s145985/paWWW4/rejestracja.php">
       <method v="2" />
     </configuration>
+    <configuration name="serwis.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://orfi.uwm.edu.pl/~s145985/paWWW4/serwis.php">
+      <method v="2" />
+    </configuration>
     <configuration name="serwis.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/serwis.php">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.serwis.php" />
         <item itemvalue="PHP Script.serwis.php" />
         <item itemvalue="JavaScript Debug.login.php" />
         <item itemvalue="JavaScript Debug.index.php" />
@@ -152,7 +137,8 @@
       <workItem from="1579796219483" duration="5555000" />
       <workItem from="1579898118948" duration="1157000" />
       <workItem from="1579899780707" duration="2747000" />
-      <workItem from="1579944430334" duration="33754000" />
+      <workItem from="1579944430334" duration="34240000" />
+      <workItem from="1580032491664" duration="14576000" />
     </task>
     <servers />
   </component>
@@ -192,22 +178,70 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="262" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1579966932307" />
+    <state width="938" height="348" key="GridCell.Tab.0.bottom" timestamp="1580049319947">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580049319947" />
+    <state width="938" height="348" key="GridCell.Tab.0.center" timestamp="1580049319947">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580049319947" />
+    <state width="938" height="348" key="GridCell.Tab.0.left" timestamp="1580049319947">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580049319947" />
+    <state width="938" height="348" key="GridCell.Tab.0.right" timestamp="1580049319947">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580049319947" />
+    <state width="938" height="348" key="GridCell.Tab.1.bottom" timestamp="1580049319948">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580049319948" />
+    <state width="938" height="348" key="GridCell.Tab.1.center" timestamp="1580049319947">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580049319947" />
+    <state width="938" height="348" key="GridCell.Tab.1.left" timestamp="1580049319947">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580049319947" />
+    <state width="938" height="348" key="GridCell.Tab.1.right" timestamp="1580049319948">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580049319948" />
+    <state width="938" height="348" key="GridCell.Tab.2.bottom" timestamp="1580049319948">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580049319948" />
+    <state width="938" height="348" key="GridCell.Tab.2.center" timestamp="1580049319948">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="348" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580049319948" />
+    <state width="938" height="348" key="GridCell.Tab.2.left" timestamp="1580049319948">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="348" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580049319948" />
+    <state width="938" height="348" key="GridCell.Tab.2.right" timestamp="1580049319948">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="348" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580049319948" />
     <state x="790" y="335" key="NewPhpClassDialog" timestamp="1579977169692">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="790" y="335" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579977169692" />
-    <state x="794" y="444" key="NewPhpFileDialog" timestamp="1579978705614">
+    <state x="794" y="444" key="NewPhpFileDialog" timestamp="1580043800488">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="444" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579978705614" />
+    <state x="794" y="444" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580043800488" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1579964178489">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1579964178489" />
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1579946113870">
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1580032492050">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579946113870" />
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580032492050" />
     <state x="591" y="65" width="737" height="909" key="find.popup" timestamp="1579946560769">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

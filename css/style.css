@@ -87,7 +87,9 @@ input[type=text]:focus, input[type=password]:focus {
     background-color: transparent;
     border: 1px solid #cccccc;
 }
-
+.button:hover {
+    border: 1px solid #666666;
+}
 .thumbnail {
     padding: 4px;
     line-height: 1.42857143;

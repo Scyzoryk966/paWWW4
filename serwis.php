@@ -53,19 +53,25 @@
                 } else {
 
                     $id = $_SESSION['id'];
-
+                    $mail = null;
+                    $sum = 0.00;
                     if ($result = $polaczenie -> query("SELECT * FROM lista WHERE id_user='$id' ORDER BY id ASC")) {
                         while ($row = $result -> fetch_row()) {
-                            echo "<td>" . $row[2] . "</td><td>". $row[3] . "</td><td>". $row[4];
+                            $mail.= "<tr><td>" . $row[2] . "</td><td>". $row[3] . "</td><td>". $row[4]."</td></tr>";
+                            echo "</tr><td>" . $row[2] . "</td><td>". $row[3] . "</td><td>". $row[4];
                             echo "<form method=\"POST\" action=\"edit.php\">";
                             echo "</td><td><button type='submit' name='editBtn' class='button' value='$row[0]' style='float: right;'>Edytuj</button>";
                             echo "</form><form method=\"POST\" action=\"del.php\">";
-                            echo "<button type='submit' name='delBtn' class='button' value='$row[0]' style='float: right; border-color: crimson; color: crimson;'>Usuń</button></td></tr>";
-                            echo "</form>";
-                        }}
+                            echo "<button type='submit' name='delBtn' class='button' value='$row[0]' style='float: right; border-color: crimson; color: crimson;'>Usuń</button>";
+                            echo "</form></td></tr>";
+                            $sum+=$row[4];
+                            $pdf[] = array($row[2], $row[3], $row[4]);
+                            }
+                        }
                         else{
                             echo "Brak zaisanej listy.";
                         }
+                        $pdfPOST = serialize($pdf);;
                         $result -> free_result();
 
 
@@ -86,6 +92,12 @@
                         <td><button class="button" type="submit" style="float: right;">Dodaj</button></td>
                     </form>
                 </tr>
+                <tr>
+                    <td></td>
+                    <td style="text-align: right">Suma:</td>
+                    <td><?php if($sum==0){echo "0.00";}else{echo $sum;}?></td>
+                    <td></td>
+                </tr>
             </table>
         </article>
         <article class="col-xs-12 col-md-4 bg-light">
@@ -95,7 +107,22 @@
                 echo "<p>E-mail: ".$_SESSION['email'];
                 ?>
                 <br><br>
-                <button class="button" onclick="window.location.href = 'logout.php'">Wyloguj się</button>
+
+                <?php
+                    echo "<button class=\"button\" onclick=\"window.location.href = 'logout.php'\">Wyloguj się</button>";
+                    echo "<form method=\"POST\" target=\"_blank\" action=\"pdfgen.php\">";
+                    echo "<button type='submit' name='pdf' class='button' value='$pdfPOST'>Generuj PDF</button>";
+                    echo "</form>";
+                    echo "<br>";
+                    echo "</form><form method=\"POST\" action=\"email.php\">";
+                    echo "<button type='submit' name='mail' class='button' value='$mail'>Wyślij na e-mial</button>";
+                    if (isset($_SESSION['err_mail']))
+                    {
+                        echo "<br><span style='color: darkgreen'>".$_SESSION['err_mail']."</span>";
+                        unset($_SESSION['err_mail']);
+                    }
+                    echo "</form>";
+                ?>
             </article>
         </article>
     </section>
