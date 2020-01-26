@@ -110,18 +110,23 @@
 
                 <?php
                     echo "<button class=\"button\" onclick=\"window.location.href = 'logout.php'\">Wyloguj się</button>";
-                    echo "<form method=\"POST\" target=\"_blank\" action=\"pdfgen.php\">";
-                    echo "<button type='submit' name='pdf' class='button' value='$pdfPOST'>Generuj PDF</button>";
-                    echo "</form>";
-                    echo "<br>";
-                    echo "</form><form method=\"POST\" action=\"email.php\">";
-                    echo "<button type='submit' name='mail' class='button' value='$mail'>Wyślij na e-mial</button>";
-                    if (isset($_SESSION['err_mail']))
-                    {
-                        echo "<br><span style='color: darkgreen'>".$_SESSION['err_mail']."</span>";
-                        unset($_SESSION['err_mail']);
+                    if(!is_null($pdf)) {
+                        echo "<form method=\"POST\" target=\"_blank\" action=\"pdfgen.php\">";
+                        echo "<button type='submit' name='pdf' class='button' value='$pdfPOST'>Generuj PDF</button>";
+                        echo "</form>";
+                        echo "<br>";
+                        echo "</form><form method=\"POST\" action=\"email.php\">";
+                        echo "<button type='submit' name='mail' class='button' value='$mail'>Wyślij na e-mial</button>";
+                        if (isset($_SESSION['err_mail'])) {
+                            echo "<br><span style='color: darkgreen'>" . $_SESSION['err_mail'] . "</span>";
+                            unset($_SESSION['err_mail']);
+                        }
+                        echo "</form>";
                     }
-                    echo "</form>";
+                    else
+                    {
+                        echo "<h3 style='color: darkgreen; padding: 10px'>Dodaj pozycje do swojej listy zakupów aby wyświetlić opcje!</h3>";
+                    }
                 ?>
             </article>
         </article>
