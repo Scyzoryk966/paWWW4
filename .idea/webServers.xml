@@ -2,10 +2,10 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="7ed22a0d-03cf-47b6-a461-2436d1823cec" name="OrfiV2" url="http://orfi.uwm.edu.pl">
-        <fileTransfer host="orfi.uwm.edu.pl" port="21">
+      <webServer id="75a69966-6b33-4087-b52a-17e2aa7ca4ee" name="orfi" url="http://orfi.uwm.edu.pl/~s145985/">
+        <fileTransfer host="orfi.uwm.edu.pl" port="21" rootFolder="/public_html/paWWW4">
           <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
           <option name="port" value="21" />
         </fileTransfer>

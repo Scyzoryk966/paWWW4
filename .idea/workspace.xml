@@ -5,6 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/email.php" beforeDir="false" afterPath="$PROJECT_DIR$/email.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serwis.php" beforeDir="false" afterPath="$PROJECT_DIR$/serwis.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +58,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
@@ -82,14 +85,14 @@
       <recent name="D:\resztapaWWW\paWWW4" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.serwis.php">
-    <configuration name="index.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://orfi.uwm.edu.pl/~s145985/paWWW4/index.php">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="PHP Script.serwis.php">
     <configuration name="login.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://orfi.uwm.edu.pl/~s145985/paWWW4/login.php">
       <method v="2" />
     </configuration>
-    <configuration name="rejestracja.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://orfi.uwm.edu.pl/~s145985/paWWW4/rejestracja.php">
+    <configuration name="serwis.php (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://orfi.uwm.edu.pl/~145985/~145985/paWWW4/serwis.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="serwis.php (2)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://orfi.uwm.edu.pl/~145985/paWWW4/serwis.php">
       <method v="2" />
     </configuration>
     <configuration name="serwis.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://orfi.uwm.edu.pl/~s145985/paWWW4/serwis.php">
@@ -100,11 +103,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.serwis.php (2)" />
+        <item itemvalue="JavaScript Debug.serwis.php (1)" />
         <item itemvalue="JavaScript Debug.serwis.php" />
         <item itemvalue="PHP Script.serwis.php" />
         <item itemvalue="JavaScript Debug.login.php" />
-        <item itemvalue="JavaScript Debug.index.php" />
-        <item itemvalue="JavaScript Debug.rejestracja.php" />
       </list>
     </recent_temporary>
   </component>
@@ -139,6 +142,9 @@
       <workItem from="1580032491664" duration="17030000" />
       <workItem from="1580058669994" duration="326000" />
       <workItem from="1580068044382" duration="991000" />
+      <workItem from="1580134694967" duration="900000" />
+      <workItem from="1580136207789" duration="863000" />
+      <workItem from="1580152985636" duration="3294000" />
     </task>
     <servers />
   </component>
@@ -146,10 +152,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="179" key="#Deployment" timestamp="1580058993068">
+    <state x="552" y="179" key="#Deployment" timestamp="1580154421658">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="179" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1580058993068" />
+    <state x="552" y="179" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1580154421658" />
     <state x="552" y="179" key="#Notifications" timestamp="1579962297043">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -174,10 +180,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579962270377" />
-    <state x="679" y="209" key="#serwis.php" timestamp="1579967076678">
+    <state x="679" y="209" key="#serwis.php" timestamp="1580154426171">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="679" y="209" key="#serwis.php/0.0.1920.1040@0.0.1920.1040" timestamp="1579967076678" />
+    <state x="679" y="209" key="#serwis.php/0.0.1920.1040@0.0.1920.1040" timestamp="1580154426171" />
     <state x="740" y="262" key="FileChooserDialogImpl" timestamp="1579966932307">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -242,14 +248,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1579964178489" />
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1580032492050">
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1580136227520">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580032492050" />
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580136227520" />
     <state x="591" y="65" width="737" height="909" key="find.popup" timestamp="1579946560769">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="591" y="65" width="737" height="909" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1579946560769" />
+    <state x="798" y="251" key="ftp.server.browser" timestamp="1580153659342">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="798" y="251" key="ftp.server.browser/0.0.1920.1040@0.0.1920.1040" timestamp="1580153659342" />
     <state x="830" y="414" key="publish.login" timestamp="1579898128374">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

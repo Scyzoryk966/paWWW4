@@ -11,7 +11,7 @@ function sanitize_my_email($field) {
     }
 }
 $to_email = $_SESSION['email'];
-$subject = 'Lista Zakupów';
+$subject = 'Testing PHP Mail';
 $message = '
 <html lang="pl">
 <head>
@@ -52,8 +52,9 @@ $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
 // More headers
 $headers .= 'From: <ListaZakupow@example.com>' . "\r\n";
-$headers .= 'Cc: cc@ListaZakupow.com' . "\r\n";
+$headers .= 'Cc: cc@example.com' . "\r\n";
 
+mail($to,$subject,$message,$headers);
 $secure_check = sanitize_my_email($to_email);
 if ($secure_check == false) {
     $_SESSION['err_mail'] = "Invalid input";

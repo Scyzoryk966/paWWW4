@@ -16,7 +16,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>Lista zakupów - paWWW4</title>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 
 <body>
@@ -36,7 +35,7 @@
 <section class="container">
     <section class="row" style="margin-top: 2%;">
         <article class="col-xs-12 col-md-8 bg-light">
-            <h1>Towja zapisana lista zakupów: </h1>
+            <h1>Towja zapisana lista zakupów:</h1>
             <table>
                 <tr>
                     <th style="width: 50%;">Nazwa:</th>
@@ -55,7 +54,6 @@
 
                     $id = $_SESSION['id'];
                     $mail = null;
-                    $i = 0;
                     $sum = 0.00;
                     if ($result = $polaczenie -> query("SELECT * FROM lista WHERE id_user='$id' ORDER BY id ASC")) {
                         while ($row = $result -> fetch_row()) {
@@ -67,7 +65,6 @@
                             echo "<button type='submit' name='delBtn' class='button' value='$row[0]' style='float: right; border-color: crimson; color: crimson;'>Usuń</button>";
                             echo "</form></td></tr>";
                             $sum+=$row[4];
-                            $i+=1;
                             $pdf[] = array($row[2], $row[3], $row[4]);
                             }
                         }
@@ -134,40 +131,11 @@
             </article>
         </article>
     </section>
-    <section class="row" style="margin-top: 2%;">
-        <article class="col-xs-12 col-md-8 bg-light">
-            <div id="piechart" style="width: 900px; height: 600px;"></div>
-        </article>
-    </section>
 </section>
 <!-- /.row -->
 
 <!-- /.container -->
 <footer class="footer">Damian Szefler &copy 2020</footer>
-<script type="text/javascript">
-    google.charts.load('current', {'packages':['corechart']});
-    google.charts.setOnLoadCallback(drawChart);
-    function drawChart()
-    {
-        var data = google.visualization.arrayToDataTable([
-            ['Nazwa', 'Ilość'],
-            <?php
-            if ($result = $polaczenie -> query("SELECT * FROM lista WHERE id_user='$id' ORDER BY id ASC")) {
-                while ($row = $result->fetch_row()) {
-                    echo "['" . $row[2] . "', " . $row[3] . "],";
-                }
-            }
-            ?>
-        ]);
-        var options = {
-            title: 'Stosunek ilościowy zakupów:',
-            //is3D:true,
-            pieHole: 0.4
-        };
-        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-        chart.draw(data, options);
-    }
-</script>
 <?php
 $polaczenie->close();
 ?>

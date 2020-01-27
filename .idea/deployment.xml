@@ -2,17 +2,10 @@
 <project version="4">
   <component name="PublishConfigData" autoUpload="Always" serverName="orfi">
     <serverData>
-      <paths name="OrfiV2">
+      <paths name="orfi">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="orfi (1)">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/public_html/paWWW4" local="$PROJECT_DIR$" web="~s145985//paWWW4" />
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/paWWW4" />
           </mappings>
         </serverdata>
       </paths>

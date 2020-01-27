@@ -1,0 +1,26 @@
+<svg width="350" height="110" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+    <g>
+        <title>Layer 1</title>
+        <g id="svg_3">
+<!--            Prostokącik!-->
+            <rect stroke="#f39422" ry="5" rx="5" id="svg_13" height="95" width="154.00001" y="7.456911" x="187.91525"
+                  stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="#f39422"/>
+<!--            text: ost-->
+            <text fill="#ffffff" stroke-width="null" x="89.053567" y="147.30377" id="svg_1" font-size="24"
+                  font-family="Sans-serif" text-anchor="middle" xml:space="preserve" font-weight="bold"
+                  transform="matrix(3.269451496050812,0,0,3.449489291253937,-173.31795831374762,-423.26477783283997) "
+                  stroke="#ffffff">ost</text>
+<!--            text: P-->
+            <text font-weight="bold" stroke="#ffffff"
+                  transform="matrix(3.4808474046358238,0,0,3.4599857083054526,-95.15931800103576,-326.8044688282604) "
+                  xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" id="svg_10"
+                  y="119.021588" x="37.678379" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null"
+                  stroke-width="null" fill="#ffffff">P</text>
+<!--            text: hub-->
+            <text id="svg_2" fill="#ffffff" stroke-width="null" x="134.042849" y="146.479369" font-size="24"
+                  font-family="Sans-serif" text-anchor="middle" xml:space="preserve" font-weight="bold"
+                  transform="matrix(3.269451496050812,0,0,3.449489291253937,-173.31795831374762,-423.26477783283997) "
+                  stroke="#ffffff">hub</text>
+        </g>
+    </g>
+</svg>
