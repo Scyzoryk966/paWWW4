@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9e751cd-6c8b-44df-87ea-6c2f12a49f6c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serwis.php" beforeDir="false" afterPath="$PROJECT_DIR$/serwis.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +136,9 @@
       <workItem from="1579898118948" duration="1157000" />
       <workItem from="1579899780707" duration="2747000" />
       <workItem from="1579944430334" duration="34240000" />
-      <workItem from="1580032491664" duration="16714000" />
+      <workItem from="1580032491664" duration="17030000" />
+      <workItem from="1580058669994" duration="326000" />
+      <workItem from="1580068044382" duration="991000" />
     </task>
     <servers />
   </component>
@@ -143,14 +146,18 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="179" key="#Deployment" timestamp="1579962401893">
+    <state x="552" y="179" key="#Deployment" timestamp="1580058993068">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="179" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1579962401893" />
+    <state x="552" y="179" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1580058993068" />
     <state x="552" y="179" key="#Notifications" timestamp="1579962297043">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="179" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1579962297043" />
+    <state x="552" y="179" key="#Options" timestamp="1580058983133">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="179" key="#Options/0.0.1920.1040@0.0.1920.1040" timestamp="1580058983133" />
     <state x="667" y="111" key="#PHP" timestamp="1579966934790">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

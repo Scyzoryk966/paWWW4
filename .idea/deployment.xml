@@ -9,7 +9,7 @@
           </mappings>
         </serverdata>
       </paths>
-      <paths name="orfi">
+      <paths name="orfi (1)">
         <serverdata>
           <mappings>
             <mapping deploy="/public_html/paWWW4" local="$PROJECT_DIR$" web="~s145985//paWWW4" />
