@@ -57,6 +57,7 @@
                     $mail = null;
                     $i = 0;
                     $sum = 0.00;
+                    $grafStyle = "display: bloack;";
                     if ($result = $polaczenie -> query("SELECT * FROM lista WHERE id_user='$id' ORDER BY id ASC")) {
                         while ($row = $result -> fetch_row()) {
                             $mail.= "<tr><td>" . $row[2] . "</td><td>". $row[3] . "</td><td>". $row[4]."</td></tr>";
@@ -129,12 +130,15 @@
                     else
                     {
                         echo "<h3 style='color: darkgreen; padding: 10px'>Dodaj pozycje do swojej listy zakupów aby wyświetlić opcje!</h3>";
+                        $grafStyle = "display: none;";
                     }
                 ?>
             </article>
         </article>
     </section>
-    <section class="row" style="margin-top: 2%;">
+    <section class="row" style="margin-top: 2%;  <?php
+                                                    echo $grafStyle;
+                                                    ?>">
         <article class="col-xs-12 col-md-8 bg-light">
             <div id="piechart" style="width: 900px; height: 600px;"></div>
         </article>

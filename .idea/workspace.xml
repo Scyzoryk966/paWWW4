@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9e751cd-6c8b-44df-87ea-6c2f12a49f6c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/email.php" beforeDir="false" afterPath="$PROJECT_DIR$/email.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/serwis.php" beforeDir="false" afterPath="$PROJECT_DIR$/serwis.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -144,7 +141,8 @@
       <workItem from="1580068044382" duration="991000" />
       <workItem from="1580134694967" duration="900000" />
       <workItem from="1580136207789" duration="863000" />
-      <workItem from="1580152985636" duration="3294000" />
+      <workItem from="1580152985636" duration="3372000" />
+      <workItem from="1580200411715" duration="824000" />
     </task>
     <servers />
   </component>
@@ -248,10 +246,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1579964178489" />
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1580136227520">
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1580200415704">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580136227520" />
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580200415704" />
     <state x="591" y="65" width="737" height="909" key="find.popup" timestamp="1579946560769">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
